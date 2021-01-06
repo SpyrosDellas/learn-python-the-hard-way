@@ -1,0 +1,131 @@
+KEYWORDS:
+as
+def
+for
+from
+import
+in
+print
+return
+while
+with
+
+
+BUILT-IN CONSTANTS:
+True
+False
+None
+
+
+BUILT-IN FUNCTIONS:
+repr()
+str()
+raw_input()
+input() Note: To be avoided due to security issues
+open(name [, mode [, buffering]])  (Returns a file object, most common modes
+        are 'r', 'w', 'a', when in 'w' mode file contents are truncated)
+file() (Constructor type for the file object, not to be used directly,
+        use open() instead)
+len()
+
+
+BUILT-IN TYPES:
+File object (supports following methods among others)
+      .read()  Returns a string object
+      .close()
+      .truncate()   Erases file contents
+      .write()   Writes a string to the file
+      .seek()   Sets the file's current position
+      .readline()   Read current line and moves current position to next line
+
+
+BUILT-IN MODULES AND SUBMODULES:
+sys, sys.argv
+os, os.path, os.path.exists
+
+
+SYMBOLS, OPERATORS AND DELIMITERS:
+" " (double quotes)
+""" (triple double quotes)
+' ' (single quotes)
+''' (triple single quotes)
+# (hash)
++ (plus)
+- (dash, minus)
+_ (underscore)
+/ (backslash)
+* (asterisk)
+= (equals)
+== (equals equals)
+. (period, dot)
+( ) (parentheses)
+[ ] (brackets)
+{ } (braces)
+, (comma)
+: (collon)
+% (percent, modulus)
+> (greater)
+< (less)
+>= (greater than or equal)
+<= (less than or equal)
+!= (not equal)
++=
+-=
+*=
+/=
+__*__ (System-defined names, for example init)
+
+
+ENCODING DECLARATION:
+# -*- coding: <encoding-name> -*- (must be the first or second line in the
+script, if second then first line must be a comment)
+
+
+NUMERIC LITERALS:
+integer (can be decimal, binary, octal or hexadecimal, largest
+        integer representable is approx 2e9 when using 32-bit arithmetic)
+long integer, i.e. an integer with suffix ("L" | "l") is a long integer,
+              for example 53325L is a long integer
+floating point (includes exponents, for example 1e-10)
+imaginary  (an integer or floating point number with suffix ("J" | "j"),
+            for example 2.345j)
+
+
+FORMULAS FACTS:
+PEMDAS Standard is used in formulas evaluation
+
+
+STRING LITERALS:
+Prefixes:
+    r or R (raw strings)
+    u or U (denotes UNICODE string)
+
+Escape sequences:
+    \\
+    \'
+    \"
+    \n (ASCII line feed, equivalent to ENTER)
+    \t (ASCII horizontal TAB)
+    \a (ASCII bell)
+    \v (ASCII vertical TAB)
+    \f (ASCII form feed, equivalent to PAGE BREAK)
+    \r (ASCII carriage return, return to beginning of current line)
+    \uxxxx (16 bit Unicode, must be used with u or U prefix)
+    \Uxxxxxxxx (32 bit Unicode, must be used with u or U prefix)
+    \ooo (character with octal value ooo)
+    \xhh (character with hexadecimal value hh)
+
+Formatters:
+    %s (Calls str() built-in function)
+    %r (Calls repr() buit-in function which returns a printable
+       representation of an object)
+    %d (Decimal Integer)
+    {} (Place holder for .format() function)
+    {:.2f} (Denotes number with to decimal digits)
+    {!r} (Equivalent to %r)
+    .format()  (Formating function for strings)
+
+
+STRING FACTS:
+1. Strings are immutable, i.e. we can't change a part of a string
+2. String can be indexed and sliced, for example str[x] or str[[x]:[y]]

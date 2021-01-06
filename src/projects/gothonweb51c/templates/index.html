@@ -1,0 +1,14 @@
+$def with (greeting, datafile)
+
+$if greeting:
+    I just wanted to say <em style="color: green; font-size: 2em;">$greeting</em>.
+$else:
+    <em>Hello</em> World!
+
+$if datafile:
+    <br><br>Your file has been uploaded successfully!<br>
+$else:
+    <br><br>Your file has NOT been uploaded...<br>
+
+<br><br>
+<a href="http://localhost:8080/hello">Go back to the form</a>

@@ -1,0 +1,36 @@
+I read part of the source code for the keras/engine in Github,
+https://github.com/fchollet/keras/blob/master/keras/engine/training.py,
+and noted the following things, some of them to research and learn:
+
+1. Importing from __future__
+
+2. Usage of PEP-8 style guide
+
+3. Frequent usage of exception handling statements: try, except
+
+4. Importing using one dot and two dots as reference to the package
+
+5. Usage of doc strings after function definitions
+
+6. Raising custom exceptions using: raise Exception('')
+
+7. Extended usage of + symbol to concatenate strings
+
+8. Type checking of arguments passed to a function using:
+    if type(arg) is type:
+
+9. Using .append() method to adding data to a list
+
+10. Usage of dict type
+
+11. Directly slicing the result of str(), using str()[:]
+
+12. Usage of built-in function hasattr()
+
+13. Usage of built-in function range() in loops
+
+14. Usage of 'continue' keyword
+
+15. Usage of built-in function zip()
+
+16. Usage of built-in function enumerate()
